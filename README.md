@@ -37,13 +37,13 @@ Google Fonts (Inter): For modern and readable typography.
 📂 File Structure
 The project is organized into a clear and simple file structure.
 
-/
-├── index.html         # The main HTML file
-├── style.css          # All custom CSS styles
-├── script.js          # All JavaScript logic
-└── Images/
-    ├── Grand School Hall.png
-    ├── Canteen.png
-    ├── Library.png
-    ├── Playground.png
-    └── classroom.png
+ /
+ ├── index.html         # The main HTML file
+ ├── style.css          # All custom CSS styles
+ ├── script.js          # All JavaScript logic
+ └── Images/
+     ├── Grand School Hall.png
+     ├── Canteen.png
+     ├── Library.png
+     ├── Playground.png
+     └── classroom.png
