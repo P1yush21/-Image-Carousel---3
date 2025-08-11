@@ -1,5 +1,3 @@
-Of course! Here is a comprehensive README.md file for your GitHub repository, formatted using Markdown.
-
 Interactive School Tour & Announcements Page
 This is a responsive, single-page website designed to provide a virtual tour of a school's facilities. It features an interactive image carousel built with Swiper.js and a dynamic announcements section. The project uses modern HTML, CSS, and JavaScript to create a clean, engaging, and user-friendly experience.
 
