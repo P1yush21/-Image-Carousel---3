@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Tour & Announcements - Team 3</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-gray-100">
+    <header>
+        <h1>Welcome to Our School Tour!</h1>
+        <p>Explore the vibrant spaces and facilities that make our school special. Swipe or use the arrows to navigate.</p>
+    </header>
+
+    <!-- Swiper Carousel Container -->
+    <div class="swiper school-tour-slider">
+        <div class="swiper-wrapper">
+            <!-- Slide 1: Grand Hall -->
+            <div class="swiper-slide">
+                <img src="Images/Grand School Hall.png"  alt="A grand school hall with high ceilings and wooden desks.">
+                <div class="image-caption">
+                    <h2>The Grand School Hall</h2>
+                    <p>Our spacious hall, perfect for assemblies and events.</p>
+                </div>
+            </div>
+            <!-- Slide 2: Canteen -->
+            <div class="swiper-slide">
+                <img src="Images/Canteen.png"  alt="A bustling school canteen with students eating.">
+                <div class="image-caption">
+                    <h2>The Lively Canteen</h2>
+                    <p>A hub where students enjoy delicious and nutritious meals.</p>
+                </div>
+            </div>
+            <!-- Slide 3: Library -->
+            <div class="swiper-slide">
+                 <img src="Images/Library.png"  alt="A quiet school library filled with books.">
+                 <div class="image-caption">
+                     <h2>The Serene Library</h2>
+                     <p>A sanctuary filled with books and learning opportunities.</p>
+                 </div>
+            </div>
+            <!-- Slide 4: Playground -->
+            <div class="swiper-slide">
+                  <img src="Images/Playground.png" alt="A vibrant school playground with children playing.">
+                  <div class="image-caption">
+                      <h2>The Vibrant Playground</h2>
+                      <p>Where students play, exercise, and enjoy the outdoors.</p>
+                  </div>
+            </div>
+            <!-- Slide 5: Classroom -->
+            <div class="swiper-slide">
+                  <img src="Images/classroom.png" alt="A modern classroom with desks and a whiteboard.">
+                  <div class="image-caption">
+                      <h2>Our Engaging Classrooms</h2>
+                      <p>Modern environments designed for interactive learning.</p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Pagination (Dots) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation Buttons (Arrows) -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    
+    <!-- NEW: Announcements Section -->
+    <section class="announcements-section">
+        <h2>Notice Board</h2>
+        <div id="announcements-container" class="announcements-container">
+            <!-- Announcements will be dynamically inserted here -->
+        </div>
+        <button id="toggle-announcements-btn" class="toggle-announcements-btn">Show More</button>
+    </section>
+
+    <!-- Lightbox/Modal for image zoom on click -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" aria-label="Close image">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Zoomed image">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

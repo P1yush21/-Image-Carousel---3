@@ -1,0 +1,288 @@
+/* General Body Styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A lighter, softer blue-gray */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0056b3, #007bff); /* Gradient for a modern look */
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Swiper Carousel Customization --- */
+        .school-tour-slider {
+            width: 95%;
+            max-width: 1400px; /* Wider for larger screens */
+            padding: 20px 0 50px 0; /* More padding at the bottom for pagination */
+        }
+
+        .swiper-slide {
+            position: relative;
+            border-radius: 12px; /* Slightly more rounded corners */
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: #fff;
+            height: 450px; /* Fixed height for consistency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease;
+        }
+
+        .swiper-slide:hover {
+            transform: translateY(-5px); /* Subtle lift effect on hover */
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+        }
+
+        .swiper-slide:hover img {
+            transform: scale(1.05);
+        }
+
+        .swiper-slide .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            padding: 40px 20px 20px 20px; /* More padding for a fade effect */
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-caption h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        .image-caption p {
+            margin: 0;
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        /* Swiper Navigation and Pagination */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffffff !important;
+            background-color: rgba(0, 86, 179, 0.5);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            transition: background-color 0.3s ease;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: rgba(0, 86, 179, 0.8);
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 20px !important;
+            font-weight: bold;
+        }
+
+        .swiper-pagination-bullet {
+            background: #aaa !important;
+            width: 10px;
+            height: 10px;
+            opacity: 0.7;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #0056b3 !important;
+            width: 25px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        /* Lightbox (Modal) Styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.95);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh; /* Responsive height */
+            border-radius: 8px;
+            animation: zoomIn 0.5s;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); }
+            to { transform: scale(1); }
+        }
+
+        #lightbox-caption {
+            margin-top: 20px;
+            text-align: center;
+            color: #ccc;
+            font-size: 1.2em;
+            padding: 0 20px;
+            max-width: 80%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #bbb;
+            transform: scale(1.1);
+        }
+
+        /* --- NEW: Announcements Section Styling --- */
+        .announcements-section {
+            width: 100%;
+            padding: 40px 5%;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .announcements-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #0056b3;
+            margin-bottom: 40px;
+        }
+
+        .announcements-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .announcement-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .announcement-card.hidden {
+            display: none;
+        }
+
+        .announcement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .announcement-card h3 {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #343a40;
+            margin-bottom: 8px;
+        }
+
+        .announcement-card .date {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .announcement-card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #495057;
+        }
+        
+        .toggle-announcements-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .toggle-announcements-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+
+        /* Responsive Design Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .swiper-slide {
+                height: 350px;
+            }
+            .image-caption h2 {
+                font-size: 1.3em;
+            }
+            .image-caption p {
+                font-size: 0.9em;
+            }
+            .announcements-section h2 {
+                font-size: 2em;
+            }
+        }
