@@ -1,11 +1,6 @@
 Interactive School Tour & Announcements Page
 This is a responsive, single-page website designed to provide a virtual tour of a school's facilities. It features an interactive image carousel built with Swiper.js and a dynamic announcements section. The project uses modern HTML, CSS, and JavaScript to create a clean, engaging, and user-friendly experience.
 
-✨ Live Demo
-<< INSERT YOUR LIVE DEMO LINK HERE >>
-
-(You can easily host this project for free using GitHub Pages)
-
 🚀 Features
 Interactive Image Carousel: A 3D coverflow effect carousel (powered by Swiper.js) to showcase school facilities.
 
